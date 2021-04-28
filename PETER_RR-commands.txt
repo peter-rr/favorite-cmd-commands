@@ -1,16 +1,23 @@
-1. Pretty basic, but people don't seem to know, returns you to the previous directory:
+1. The format of the git log output is very flexible. For example to output each commit on a single line the command is:
+$ git log --pretty=format:"%h %an %ar - %s"
+$ git log --oneline
+
+2. Making your computer say anything you want can be a humorous way to not only entertain yourself, but also to entertain kids or an audience. No special software is required, and everything is done simply by way of an incredibly easy bash command:
+$ say "Hello, lovely people."
+
+3. Pretty basic, but people don't seem to know, returns you to the previous directory:
 $ cd -
 $ cd..
 
-2. Because I run make all the time, and spaz out and type too quickly, these aliases are probably my most used (seriously):
+4. Because I run make all the time, and spaz out and type too quickly, these aliases are probably my most used (seriously):
 $ alias maek=make
 $ alias mkae=make
 $ alias meak=make
 $ alias amka=make
 $ alias akme=make
 
-3. The history command will show a list of recently run commands with an event designator to the left:
+5. The history command will show a list of recently run commands with an event designator to the left:
 $ history
 
-4. Making your computer say anything you want can be a humorous way to not only entertain yourself, but also to entertain kids or an audience. No special software is required, and everything is done simply by way of an incredibly easy bash command:
-$ say "Hello, lovely people."
+6. Use this command to find all the commits containing #1234:
+$ git log --grep="#1234"
